@@ -1,6 +1,9 @@
 # JavaScript Calculator
 Full Stack simple calculator with React frontend and NodeJS backend.
 
+## Author
+- [Adam Bencze](https://github.com/benczeadam)
+
 ## Features
  - Basic operations and decimal point supported
  - Some input validation logics
