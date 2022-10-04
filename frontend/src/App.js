@@ -22,7 +22,6 @@ function App() {
    * @param {String} value The new character on the calculator 
    */
   const updateCalc = value => {
-    console.log(decimalpoint)
     if (ops.includes(value) && calc == '' ||
       ops.includes(value) && ops.includes(calc.toString().slice(-1))) { return; }
 
@@ -96,7 +95,6 @@ function App() {
     }
     var containsPoint = false;
     var i = calc.length;
-    console.log(calc);
     const lastDigit = calc.toString().slice(-1)
     if (lastDigit == ".") {
       setDecimalPoint(false);
@@ -109,7 +107,6 @@ function App() {
           break;
         }
       }
-      console.log(containsPoint);
       containsPoint ? setDecimalPoint(true) : setDecimalPoint(false);
     }
     const value = calc.toString().slice(0, -1);
